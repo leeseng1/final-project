@@ -3,24 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="reset" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/script.js" async></script>
     <title>Home</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <h1>Seng Lee</h1>
-                <h2>Personal Portfilio</h2>
-                <li><a href="./pages/resume.html">Resume</a></li>
-                <li><a href="./pages/projects.html">Projects</a></li>\
-                <li><a href="./pages/about.html">About Me</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div id="hamburgerMenu">
+            <div class="offscreen">
+                <ul>
+                    <li><a href="./pages/resume.html">Resume</a></li>
+                    <li><a href="./pages/projects.html">Projects</a></li>
+                    <li><a href="./pages/about.html">About Me</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <nav>
+                <h1 id="name">Seng Lee</h1>
+                <h2 id="title">Personal Portfilio</h2>
+                <div class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <nav id="navbar">
+                <h1 id="name">Seng Lee</h1>
+                <h2 id="title">Personal Portfilio</h2>
+                <ul>
+                    <li><a href="./pages/resume.html">Resume</a></li>
+                    <li><a href="./pages/projects.html">Projects</a></li>
+                    <li><a href="./pages/about.html">About Me</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
-            kdsiekdie
+            <h1>Who I Am</h1>
+            <div>
+                <img src="./assets/images/AIpic.jpg" alt="headshot">
+            </div>
+            <p> My name is Seng Lee. I am currently a student at Mid State Technical College in the Software Development program.
+                I have experience with in HTML, CSS, JavaScript, and Python. I have a passion for learning new technologies and 
+                improving my skills. 
+            </p>
+        </section>
+        <section>
+
         </section>
     </main>
 </body>
