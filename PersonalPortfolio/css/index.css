@@ -40,7 +40,7 @@ body {
     margin-top: 87px;
     position: fixed;
     top: 0;
-    right: -1500px;
+    right: -15000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +58,7 @@ body {
 .offscreen li, a {
     list-style: none;
     margin: 10px;
-    padding: 20px;
+    padding: 12px;
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
@@ -205,19 +205,14 @@ nav {
 
 .main-content {
     width: auto;
-    height: 100%;
     padding: 20px;
     margin: 10px;
     display: grid;
-    box-sizing: border-box;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 20px;
     row-gap: 20px;
     color: var(--light);
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .main-content h2 {
@@ -234,11 +229,12 @@ nav {
     border-radius: 10px;
     padding: 10px;
     transition: all 0.5s ease;
-
+    width: 50%;
+    height: auto;
 }
 
 .cards img {
-    max-width: 50%;
+    width: 100px;
     height: 90px;
 
 }
@@ -249,12 +245,26 @@ nav {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2;
-    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-evenly;
     align-items: center;
     text-align: center;
+    color: var(--light);
+    gap: 10px
+}
+
+.socials a {
+    transition: .4s ease;
+}
+.socials a:hover {
+    color: var(--success);
 }
 
 /* @media (max-width: 768px) {
