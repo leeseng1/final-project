@@ -158,7 +158,20 @@ nav {
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100px;
 }
 
 .buttons {
