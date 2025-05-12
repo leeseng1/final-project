@@ -172,6 +172,34 @@ nav {
     margin: 10px 0;
 }
 
+.resume-section-skills h1 {
+    font-size: 2rem;
+    border-bottom: solid 3px var(--primary-color, 30%);
+    padding-bottom: 5px;
+}
+
+.resume-section-skills h3, h4 {
+    font-size: 1rem;
+    color: rgb(122, 122, 122);
+    margin: 10px 0;
+}
+
+.resume-section-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: inherit;
+    padding: 10px;
+    margin: 5px;
+}
+
+.resume-item-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 25px;
+}
 
 .resume-item {
     border-left: solid 3px rgba(207, 162, 252, 0.432);
@@ -252,7 +280,42 @@ footer {
 }
 
 @media print {
-    .
+    body {
+        margin: 0;
+        font-family: serif;
+        color: black;
+        background: white;
+        height: auto;
+        
+    }
+
+    .buttons, header, footer {
+        display: none;
+    }
+
+    .hero span {
+        color: black;
+    }
+
+    .hero{
+        color: black;
+        font-size: 10px;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        color: black;
+    }
+
+
 }
 
 @media (min-width: 768px) {
