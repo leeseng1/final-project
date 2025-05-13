@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="reset" href="../css/reset.css">
+    <script src="../js/validation.js" async></script>
+    <script src="../js/script.js" async></script>
     <title>Contact</title>
 </head>
 <body>
-    
+        <header>
+        <div id="hamburgerMenu">
+            <div class="offscreen">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <nav>
+                <h1>SENG LEE</h1>
+                <div class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <nav id="navbar">
+                <div id="logo"><h1>SENG LEE</h1></div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./contact.html"><span class="span-spec">Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Contact <span>Me</span></h1>
+            <div class="container">
+                <div class="contact-item">
+                    <h2>📧 Email</h2>
+                    <p>lee.seng210@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h2>📞 Phone</h2>
+                    <p>(715)-295-4350</p>
+                </div>
+            </div>
+            <div class="container-form">
+                <h2>Get In Touch</h2>
+                <form id="myform" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <div>
+                            <label for="name">Name</label>
+                        </div>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <div id="nameError" class="error-msg"></div><br><br>
+                        <div>
+                            <label for="email">Email</label>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <div id="emailError" class="error-msg"></div><br><br>
+                        <div>
+                            <label for="message">Message</label>
+                        </div>
+                        <textarea id="message" name="message" placeholder="Hi Seng, I'd love to talk to you about a great opportunity you might like! " required></textarea>
+                        <div id="messageError" class="error-msg"></div><br><br>
+                        
+                        <div id="successMessage" class="success-msg"></div>
+                        <button type="submit" value="Send Message" class="button-spec">Send Message</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <br><br>
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2025 Seng Lee. All rights reserved.</p>
+            <p>Find me on:</p>
+            <div class="socials">
+                <a href="https://github.com/leeseng1" target="_blank" class="github">Github</a>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/seng.lee.0/" target="_blank" class="facebook">Facebook</a>
+            </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/seng-lee-37a4aa34b" target="_blank" class="linkedin">Linkedin</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
