@@ -161,7 +161,7 @@ nav {
 
 .resume-section h1 {
     font-size: 2rem;
-    border-bottom: solid 3px var(--primary-color, 30%);
+    border-bottom: solid 3px var(--primary-color);
     padding-bottom: 5px;
 }
 
@@ -173,7 +173,7 @@ nav {
 
 .resume-section-skills h1 {
     font-size: 2rem;
-    border-bottom: solid 3px var(--primary-color, 30%);
+    border-bottom: solid 3px var(--primary-color);
     padding-bottom: 5px;
 }
 
