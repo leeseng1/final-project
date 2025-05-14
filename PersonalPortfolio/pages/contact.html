@@ -58,7 +58,7 @@
             </div>
             <div class="container-form">
                 <h2>Get In Touch</h2>
-                <form id="myform" onsubmit="return validateForm()">
+                <form id="myform">
                     <div class="form-group">
                         <div>
                             <label for="name">Name</label>
@@ -77,7 +77,7 @@
                         <div id="messageError" class="error-msg"></div><br><br>
                         
                         <div id="successMessage" class="success-msg"></div>
-                        <button type="submit" value="Send Message" class="button-spec">Send Message</button>
+                        <button type="button" onclick="return validateForm()" value="Send Message" class="button-spec">Send Message</button>
                         
                     </div>
                 </form>

@@ -154,23 +154,38 @@ nav {
 }
 
 .card-container {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     text-align: center;
     gap: 20px;
 }
 
 .cards {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to top right, var(--primary-dark) 40%, var(--primary-color)80%);
+    background: linear-gradient(to top right, var(--primary-dark) 10%, var(--primary-color)80%);
     border-radius: 15px;
+    transition: .6s ease;
+}
+
+.cards:hover {
+    scale: 1.05;
     box-shadow: 0 3px 8px rgba(255, 255, 255, 0.199);
+}
+
+.cards h2 {
+    border-bottom: solid 2px var(--light);
+    padding-bottom: 5px;
 }
 
 .cards p {
@@ -179,67 +194,29 @@ nav {
 }
 
 .cards img {
-    max-width: 100px;
+    max-width: 200px;
+    border-radius: 15px;
+
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    margin: 10px;
-    gap: 10px;
+button {
+    background: var(--gray);
+    width: 200px;
+    border-radius: 15px;
+    border: solid 2px black;
 }
 
-.button-regular {
-    display: inline-block;
-    padding: 12px;
-    border: solid 2px var(--light);
-    border-color: var(--primary-color);
-    border-radius: 10px;
-    font-weight: bold;
+.discription {
     text-align: center;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    margin: 5px;
 }
 
-.button-spec {
-    display: inline-block;
-    padding: 12px;
-    border: solid 2px var(--light);
-    border-color: var(--primary-color);
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    margin: 5px;
-}
-
-.button-regular:hover {
-    background-color: var(--success);
-    color: var(--dark-color);
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.562);
-    scale: 1.05;
-}
-
-.button-spec:hover {
-    background-color: var(--success);
-    color: var(--dark-color);
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.562);
-    scale: 1.06;
-}
-
-#discription p{
+.discription p{
     padding: 15px;
     margin: 10px;
     line-height: 1.5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
 } 
-
-
 
 footer {
     height: 200px;
@@ -303,4 +280,22 @@ footer {
     .span-spec {
         color: var(--secondary-color);
     }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+        justify-content: center;
+        gap: 20px;
+        background: rgba(146, 143, 143, 0.178);
+        border-radius: 15px;
+    }
+
+    .cards {
+        width: 70%;
+        height: 500px;
+    }
+
 }

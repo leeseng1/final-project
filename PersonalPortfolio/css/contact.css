@@ -213,8 +213,8 @@ nav {
 .success-msg {
     color: var(--success);
     font-size: 15px;
-    font-weight: 400;
-    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .error-msg {

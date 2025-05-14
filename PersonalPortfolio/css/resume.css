@@ -314,7 +314,7 @@ footer {
     }
 
     .resume-item {
-        border-left: solid 1px black;
+        border-left: none;
     }
 
     .resume-section-skills h1{
